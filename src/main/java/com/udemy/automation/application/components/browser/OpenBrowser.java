@@ -17,6 +17,6 @@ public class OpenBrowser implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
 
-        actor.attemptsTo(Open.url(config.getUrl()));
+        actor.attemptsTo(Open.url(config.getUrlGoogle()));
     }
 }

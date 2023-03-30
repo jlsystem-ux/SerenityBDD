@@ -13,6 +13,14 @@ import org.springframework.context.annotation.PropertySource;
 public class ApplicationConfig {
 
     @Getter
+    @Value("https://www.google.com/")
+    private String urlGoogle;
+
+    public String getUrlGoogle(){
+        return urlGoogle;
+    }
+
+   /* @Getter
     @Value("${app.url}")
     private String url;
 
@@ -50,5 +58,5 @@ public class ApplicationConfig {
 
     public String getUrl() {
         return url;
-    }
+    }**/
 }
