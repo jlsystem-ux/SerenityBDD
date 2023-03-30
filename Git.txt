@@ -1,7 +1,0 @@
-ssh-keygen -o -f ~/.ssh/id_rsa
-cd ~/.ssh
-ls
-cat id_rsa.pub
-
-$git config --global user.name "henrych"
-$git config --global user.email "hjcalani@gmail.com"
