@@ -8,7 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 /**
  * @author Henry J. Calani A.
  */
-public class TheEmailLabel implements Question<String> {
+/*public class TheEmailLabel implements Question<String> {
 
     @Autowired
     private LoginComponent component;
@@ -17,4 +17,4 @@ public class TheEmailLabel implements Question<String> {
     public String answeredBy(Actor actor) {
         return Text.of(component.getEmailLabel()).viewedBy(actor).resolve().trim();
     }
-}
+}**/

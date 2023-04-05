@@ -1,10 +1,10 @@
 package com.udemy.automation.test;
 
 import com.udemy.automation.application.components.browser.OpenBrowser;
-import com.udemy.automation.application.components.login.TheEmailInputExists;
+/*import com.udemy.automation.application.components.login.TheEmailInputExists;
 import com.udemy.automation.application.components.login.TheHeaderTitle;
 import com.udemy.automation.application.components.login.TheLoginButtonExists;
-import com.udemy.automation.application.components.login.ThePasswordInputExists;
+import com.udemy.automation.application.components.login.ThePasswordInputExists;**/
 import net.serenitybdd.screenplay.Actor;
 import net.thucydides.core.annotations.WithTag;
 import org.junit.Before;
@@ -16,9 +16,28 @@ import static org.hamcrest.Matchers.is;
 /**
  * @author Henry J. Calani A.
  */
-public class OpenApplicationTest extends AbstractTest {
+public class OpenGoogleApplicationTest extends AbstractTest {
+    private Actor actor = Actor.named("Luis");
+    private OpenBrowser openBrowser;
+    @Before
+    public void setup() {
+        initializeActor(actor);
+        openBrowser = taskInstance(OpenBrowser.class);
 
-    private Actor actor = Actor.named("henry");
+    }
+    @WithTag("openAplication")
+    @Test
+    public void userOpenApplication() {
+        givenThat(actor)
+                .attemptsTo(openBrowser);
+
+
+    }
+
+
+
+
+   /* private Actor actor = Actor.named("henry");
 
     private OpenBrowser openBrowser;
 
@@ -57,5 +76,6 @@ public class OpenApplicationTest extends AbstractTest {
                 seeThat(thePasswordInputExists),
                 seeThat(theLoginButtonExists)
         );
-    }
+    }**/
+
 }

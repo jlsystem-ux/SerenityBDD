@@ -13,7 +13,7 @@ import org.springframework.context.annotation.PropertySource;
 public class ApplicationConfig {
 
     @Getter
-    @Value("https://www.google.com/")
+    @Value("https://chat.openai.com/chat")
     private String urlGoogle;
 
     public String getUrlGoogle(){

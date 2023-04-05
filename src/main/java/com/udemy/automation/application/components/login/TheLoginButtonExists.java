@@ -8,7 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 /**
  * @author Henry J. Calani A.
  */
-public class TheLoginButtonExists implements Question<Boolean> {
+/*public class TheLoginButtonExists implements Question<Boolean> {
 
     @Autowired
     private LoginComponent component;
@@ -17,4 +17,4 @@ public class TheLoginButtonExists implements Question<Boolean> {
     public Boolean answeredBy(Actor actor) {
         return Presence.of(component.getLoginButton()).viewedBy(actor).resolve();
     }
-}
+}**/

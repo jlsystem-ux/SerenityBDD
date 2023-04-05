@@ -8,7 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 /**
  * @author Henry J. Calani A.
  */
-public class TheEmailInputExists implements Question<Boolean> {
+/*public class TheEmailInputExists implements Question<Boolean> {
 
     @Autowired
     private LoginComponent component;
@@ -17,4 +17,4 @@ public class TheEmailInputExists implements Question<Boolean> {
     public Boolean answeredBy(Actor actor) {
         return Presence.of(component.getEmailInput()).viewedBy(actor).resolve();
     }
-}
+}**/

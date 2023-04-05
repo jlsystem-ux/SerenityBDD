@@ -8,7 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 /**
  * @author Henry J. Calani A.
  */
-public class TheHeaderTitle implements Question<String> {
+/*public class TheHeaderTitle implements Question<String> {
 
     @Autowired
     private LoginComponent component;
@@ -17,4 +17,4 @@ public class TheHeaderTitle implements Question<String> {
     public String answeredBy(Actor actor) {
         return Text.of(component.getHeaderTitle()).viewedBy(actor).resolve();
     }
-}
+}**/

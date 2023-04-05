@@ -8,7 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 /**
  * @author Henry J. Calani A.
  */
-public class ThePasswordLabel implements Question<String> {
+/*public class ThePasswordLabel implements Question<String> {
 
     @Autowired
     private LoginComponent component;
@@ -18,3 +18,4 @@ public class ThePasswordLabel implements Question<String> {
         return Text.of(component.getPasswordLabel()).viewedBy(actor).resolve().trim();
     }
 }
+**/
